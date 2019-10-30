@@ -2,6 +2,9 @@
 
 "Close other tabs" disappeared since Chrome 78 canary build. So, I'm creating a new chrome extension to close all other tabs.
 
+<div align="center">
+<img src="./assets/screenshot.png" width="80%">
+</div>
 
 ## BUILD
 
@@ -15,7 +18,6 @@ npm run build
 ```
 npm run zip
 ```
-
 
 ## References
 
