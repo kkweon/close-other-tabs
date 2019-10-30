@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Close other tabs",
+  "version": "1.0.0",
+
+  "description": "Create a context menu (right click menu) to close other tabs",
+  "background": {
+    "scripts": ["background_bundle.js"]
+  },
+  "permissions": ["tabs"]
+}
