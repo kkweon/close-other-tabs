@@ -13,7 +13,16 @@
 npm run build
 ```
 
-## BUILD zip file to upload
+This command will create a directory **dist**, which can be loaded from [chrome://extensions](chrome://extensions).
+
+## Install the extension from Chrome
+
+1. Build the project by running `npm run build`
+1. Go to **chrome://extensions**
+1. Click **Load unpacked**
+1. Point to **dist** directory
+
+## BUILD zip file to publish
 
 ```
 npm run zip
