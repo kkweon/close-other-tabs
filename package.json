@@ -10,8 +10,8 @@
     "build:images": "cp -R images dist",
     "lint": "tslint --project .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf dist",
-    "zip": "npm run build && cd dist && zip -r ../close-other-tabs.zip *"
+    "clean": "rm -rf dist && rm -f *.zip",
+    "zip": "npm run clean && npm run build && cd dist && zip -r ../close-other-tabs.zip *"
   },
   "repository": {
     "type": "git",
