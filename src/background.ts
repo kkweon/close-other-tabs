@@ -1,11 +1,9 @@
-chrome.runtime.onInstalled.addListener(() => {
-  chrome.contextMenus.create({
+chrome.contextMenus.create({
     title: 'Close other tabs',
     contexts: ['all'],
     onclick: (_info, _tab) => {
       closeOtherTabs();
     },
-  });
 });
 
 function closeOtherTabs() {
