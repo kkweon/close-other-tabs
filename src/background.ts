@@ -1,13 +1,17 @@
 chrome.contextMenus.create({
-    title: 'Close other tabs',
-    contexts: ['all'],
-    onclick: (_info, _tab) => {
-      closeOtherTabs();
-    },
-});
+  contexts: ['all'],
+  onclick: closeOtherTabs,
+  title: 'Close other tabs',
+})
 
-function closeOtherTabs() {
-  chrome.tabs.query({active: false, currentWindow: true}, tabs => {
-    chrome.tabs.remove(tabs.map(t => t.id as number));
-  });
+function closeOtherTabs(
+  _info: chrome.contextMenus.OnClickData,
+  _tab: chrome.tabs.Tab,
+) {
+  chrome.tabs.query(
+    { active: false, currentWindow: true },
+    (tabs: chrome.tabs.Tab[]) => {
+      chrome.tabs.remove(tabs.map(t => t.id as number))
+    },
+  )
 }
