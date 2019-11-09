@@ -1,5 +1,5 @@
-import path from 'path';
-import webpack from 'webpack';
+import path from 'path'
+import webpack from 'webpack'
 
 const config: webpack.Configuration = {
   mode: 'production',
@@ -17,9 +17,9 @@ const config: webpack.Configuration = {
   module: {
     rules: [
       // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
-      {test: /\.tsx?$/, loader: 'ts-loader'},
+      { test: /\.tsx?$/, loader: 'ts-loader' },
     ],
   },
-};
+}
 
-export default config;
+export default config
