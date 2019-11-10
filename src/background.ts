@@ -4,7 +4,7 @@ chrome.contextMenus.create({
   title: 'Close other tabs',
 })
 
-function closeOtherTabs(
+export function closeOtherTabs(
   _info: chrome.contextMenus.OnClickData,
   _tab: chrome.tabs.Tab,
 ) {
