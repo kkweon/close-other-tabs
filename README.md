@@ -1,5 +1,7 @@
 # close-other-tabs
 
+[![Build Status](https://travis-ci.com/kkweon/close-other-tabs.svg?branch=master)](https://travis-ci.com/kkweon/close-other-tabs)
+
 <div align="center">
 <img src="./assets/example.gif" width="80%">
 </div>
