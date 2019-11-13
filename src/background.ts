@@ -9,7 +9,7 @@ export function closeOtherTabs(
   _tab: chrome.tabs.Tab,
 ) {
   chrome.tabs.query(
-    { active: false, currentWindow: true },
+    { active: false, currentWindow: true, pinned: false },
     (tabs: chrome.tabs.Tab[]) => {
       chrome.tabs.remove(tabs.map(t => t.id as number))
     },
