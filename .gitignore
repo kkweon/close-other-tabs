@@ -1,3 +1,5 @@
 dist
 node_modules
 close-other-tabs.zip
+.DS_Store
+.idea
